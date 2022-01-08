@@ -369,7 +369,10 @@
     padding: 0 16px;
     border-radius: 7em;
   }
-  &__item-info {}
+  &__item-info {
+    display: flex;
+    align-items: center;
+  }
   &__item-price {
     padding: 10px 20px;
     margin-right: 20px;
@@ -412,6 +415,10 @@
     border-radius: 0 7em 7em 0;
     background-image: url(../img/chevron-right.svg);
     right: 30px;
+  }
+  .rate-star{
+    display: inline-block;
+    margin-left: auto;
   }
 }
 /* -------------------------------------------------------------------------- */

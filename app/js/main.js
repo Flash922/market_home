@@ -1,4 +1,5 @@
 $(function(){
+ 
   $('.home-slider__wrapper').slick({
     dots: false,
     infinite: true,
@@ -6,6 +7,12 @@ $(function(){
     slidesToShow: 1,
     adaptiveHeight: false,
     arrows: true,
+  });
+  $('.rate-star').rateYo({
+    rating: 5,
+    starWidth: '14px',
+    ratedFill: '#ffc000',
+    readOnly: true,
   });
 
 });
