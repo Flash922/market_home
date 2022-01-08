@@ -291,23 +291,129 @@
   &__inner {
     padding: 120px 0;
   }
-  &__title {}
-  &__wrapper {}
-  &__item {}
-  &__item-img {}
-  &__item-title {}
-  &__item-user {}
-  &__item-avatar {}
-  &__item-author {}
-  &__item-theme {}
-  &__item-text {}
-  &__button-list {}
-  &__button-type {}
-  &__item-info {}
-  &__item-price {}
-  &__item-rating {}
-}
+  &__title {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 40px 160px 40px 30px;
+    margin-bottom: 50px;
+  }
+  &__wrapper {
+  }
+  &__item-wrapper, &__title{
+    border-radius: .3em;
+    overflow: hidden;
+   }
 
+  &__item {
+    display: flex;
+    min-height: 455px;
+  } 
+  &__item-content{
+    padding: 40px 60px 25px 50px;
+    background-color: #fff;
+    max-width: 585px;
+    width: 100%;
+  }
+  &__item-img {
+    background-color: #4e5760;
+    max-width: 555px;
+    width: 100%;
+    min-height: 455px;
+  }
+  &__item-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__item-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    .icon-wordpress::before{  
+      margin-right: 20px;
+    }
+  }
+  &__item-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 7em;
+    background-color: $blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+  &__item-author {
+    margin-right: 20px;
+    color: #000;
+    font-size: 15px;
+  }
+  &__item-theme {
+    position: relative;
+    color: $violet;
+    font-size: 15px;
+    
+  }
+  &__item-text {
+    margin-bottom: 40px;
+  }
+  &__button-list{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 23px;
+  }
+  &__button-type {
+    display: inline-block;
+    color: #868c96;
+    background-color: #f1f3f6;
+    padding: 0 16px;
+    border-radius: 7em;
+  }
+  &__item-info {}
+  &__item-price {
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+  .lnr-heart{
+    color: #000;
+    margin-right: 20px;
+  }
+  .lnr-heart:before {
+    margin-right: 12px;
+    color: $violet;
+  }
+  .lnr-cart{
+    color: $blue;
+  }
+  .lnr-cart::before{
+    margin-right: 10px;
+  }
+  &__item-rating {}
+  .slick-prev, .slick-next {
+    position: absolute;
+    z-index: 2;
+    height: 45px;
+    background-color: $violet;
+    width: 55px;
+    border: none;
+    color: transparent;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position:center;
+    top: -140px;
+  }
+  .slick-prev{
+    border-radius: 7em 0 0 7em;
+    background-image: url(../img/chevron-left.svg);
+    right: 85px;
+
+  }
+  .slick-next{
+    border-radius: 0 7em 7em 0;
+    background-image: url(../img/chevron-right.svg);
+    right: 30px;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ Start footer ------------------------------ */
 
@@ -429,6 +535,7 @@
     margin-bottom: 32px;
   }
 }
+
 .icon-facebook {
   background-color: #395799;
 }
