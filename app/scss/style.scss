@@ -392,14 +392,15 @@
   }
   &__item-rating {
   }
-  
+
   .rate-star {
     display: inline-block;
     margin-left: auto;
   }
 }
-.home-slider__wrapper, .home-slider__wrapper-two {
-    .slick-prev,
+.home-slider__wrapper,
+.home-slider__wrapper-two {
+  .slick-prev,
   .slick-next {
     position: absolute;
     z-index: 2;
@@ -423,10 +424,10 @@
     background-image: url(../img/chevron-right.svg);
     right: 30px;
   }
-  }
-  .home-slider__wrapper-two {
-    .slick-prev,
-  .slick-next{
+}
+.home-slider__wrapper-two {
+  .slick-prev,
+  .slick-next {
     background-color: $blue;
   }
 }
@@ -440,7 +441,7 @@
   &__inner {
     padding: 120px 0;
   }
-  &__button{
+  &__button {
     display: block;
     width: 190px;
     padding: 15px 30px;
@@ -529,7 +530,6 @@
     border-radius: 7em;
     background-position: center;
     background-size: cover;
-
   }
   &-author {
     font-size: 15px;
@@ -549,26 +549,25 @@
     align-items: center;
   }
   &-price {
-    padding:8px 18px ;
-      margin-right: 15px;
-      background-color: #e6f1fd;
-      color: $blue;
-      border-radius: 7em;
-      border: none;
+    padding: 8px 18px;
+    margin-right: 15px;
+    background-color: #e6f1fd;
+    color: $blue;
+    border-radius: 7em;
+    border: none;
   }
   &-rating {
   }
 }
-.icon-wordpress:before{
+.icon-wordpress:before {
   margin-right: 10px;
 }
 .button {
-
 }
 .lnr-heart {
   color: #6f7d8d;
   margin-right: 20px;
-  &::before{
+  &::before {
     color: $violet;
     margin-right: 8px;
   }
@@ -578,7 +577,7 @@
 .lnr-cart {
   color: $blue;
   margin-left: auto;
-  &::before{
+  &::before {
     margin-right: 10px;
   }
 }
@@ -586,30 +585,75 @@
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ End n-product ----------------------------- */
 /* -------------------------------------------------------------------------- */
+/* ------------------------------- start news ------------------------------- */
+
+/* -------------------------------- end news -------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ Start Support ----------------------------- */
+/* -------------------------------------------------------------------------- */
+.support {
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 125px;
+    max-width: 155px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    padding: 60px;
+    text-align: center;
+    width: 50%;
+  }
+  &__item + &__item {
+    border-left: 1px solid #e8eaf3;
+  }
+  &__img-support {
+    background-image: url(../img/comp.png);
+  }
+  &__img-guarantee {
+    background-image: url(../img/money.png);
+  }
+  &__text {
+    font-size: 24px;
+    span {
+      color: $blue;
+    }
+  }
+  &__text-support span {
+    color: $violet;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------- End Support ------------------------------ */
+/* -------------------------------------------------------------------------- */
 /* ------------------------------- start join ------------------------------- */
 /* -------------------------------------------------------------------------- */
-.join{
-  background-image: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+.join {
+  background-image: linear-gradient(-90deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
   opacity: 0.902;
   min-height: 400px;
-  &__inner{
+  &__inner {
     padding: 110px 0;
     color: #fff;
     text-align: center;
   }
-  &__title{
+  &__title {
     font-size: 36px;
   }
-  &__text{
+  &__text {
     font-size: 18px;
     margin-bottom: 60px;
   }
-  &__link{
+  &__link {
     padding: 20px 40px;
-
   }
 }
-
 
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- end join -------------------------------- */
