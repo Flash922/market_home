@@ -726,6 +726,73 @@
 
 /* ------------------------------- End Scores ------------------------------- */
 /* -------------------------------------------------------------------------- */
+/* ----------------------------- Start martplace ---------------------------- */
+.martplace {
+  &__inner{
+    padding: 115px 0;
+  }
+  &__name {
+    text-align: center;
+  }
+  &__title {
+    color: #000;
+    font-size: 36px;
+    
+    span{
+      color: $blue;
+    }
+  }
+  &__text {
+     color: $c5;
+     width: 670px;
+     margin: 0 auto 30px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  
+}
+.martplace__item {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  max-width: 361px;
+  min-height: 373px;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  &-number {
+    font-size: 48px;
+    line-height: 48px;
+    color: #5c87f8;
+  text-align: left;
+  opacity: .2;
+  }
+  &-logo {
+    margin-bottom: 50px;
+    font-size: 60px;
+    min-height: 65px;
+  }
+  &-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    color: $c5;
+  }
+  .lnr-license{color: $blue;}
+  .lnr-magic-wand{color: $violet;}
+  .lnr-lock{color: $green;}
+  .lnr-chart-bars{color: #feb71d;}
+  .lnr-leaf{color: #58c9e9;}
+  .lnr-phone{color: #ff6a6d;}
+}
+/* ------------------------------ End martplace ----------------------------- */
+/* -------------------------------------------------------------------------- */
 /* ------------------------------ Start Support ----------------------------- */
 
 .support {
