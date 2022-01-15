@@ -6,15 +6,14 @@
 /* ------------------------------ Start Header ------------------------------ */
 /* -------------------------------------------------------------------------- */
 .header__top {
-  color: #eef1f3;
+  background-color: #eef1f3;
   &-info {
     display: none;
   }
   &-inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
-    margin-bottom: 25px;
+    padding: 25px 0;
   }
   &-logo {
     display: flex;
@@ -80,7 +79,7 @@
     display: inline-block;
     height: 50px;
     width: 50px;
-    background-color: #a9a9a9;
+    background-color: #7c7979;
     border-radius: 50%;
     margin-right: 20px;
   }
@@ -111,8 +110,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
-    margin-bottom: 35px;
+    padding: 18px 0;
     form {
       position: relative;
     }
@@ -155,6 +153,40 @@
 /* -------------------------------------------------------------------------- */
 /* ------------------------------- End header ------------------------------- */
 /* -------------------------------------------------------------------------- */
+/* ---------------------------- Start Breadcrumbs --------------------------- */
+.breadcrumbs {
+  background-image: linear-gradient(180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+  opacity: 0.902;
+  min-height: 180px;
+  padding: 60px 0;
+  color: #fff;
+  ul {
+    margin-bottom: 30px;
+  }
+  li {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    a,
+    span {
+      color: #fff;
+    }
+    & + li {
+      padding-left: 25px;
+      &::before {
+        position: absolute;
+        left: 7px;
+        content: ' / ';
+      }
+    }
+  }
+  &__name {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+/* ---------------------------- Start Breadcrumbs --------------------------- */
 /* --------------------------- Start Home-product --------------------------- */
 /* -------------------------------------------------------------------------- */
 .home-product {
@@ -1027,6 +1059,7 @@
     padding-left: 35px;
     margin-bottom: 7px;
     font-style: normal;
+    line-height: 1.9em;
   }
 }
 .footer__col {
@@ -1057,6 +1090,9 @@
       font-family: 'Linearicons-Free';
       font-weight: 400;
       color: #fff;
+    }
+    .lnr-map-marker::before {
+      top: 25%;
     }
   }
   &-list {
@@ -1139,4 +1175,24 @@
 }
 
 /* ------------------------------- End footer ------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- start 404 ------------------------------- */
+.not-find {
+  text-align: center;
+  &__inner {
+    padding: 580px 0 100px;
+    background: url(../img/404.png) no-repeat center 80px;
+  }
+  &__text {
+    margin-bottom: 45px;
+    font-size: 30px;
+  }
+  &__button {
+    width: 190px;
+    height: 50px;
+    padding: 20px 45px;
+    font-size: 15px;
+  }
+}
+/* --------------------------------- end 404 -------------------------------- */
 /* -------------------------------------------------------------------------- */
