@@ -1196,3 +1196,128 @@
 }
 /* --------------------------------- end 404 -------------------------------- */
 /* -------------------------------------------------------------------------- */
+/* ---------------------------- start contact us ---------------------------- */
+.contact {
+  color: #fff;
+  padding: 100px 0;
+  background-image: linear-gradient( 260deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+  opacity: 0.902;
+  min-height: 281px;
+  text-align: center;
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &__text {
+  }
+}
+.help {
+  background-color: #eff1f5;
+  padding: 120px 0;
+  
+  &__inner {
+    color: $c5;
+  }
+  &__name {
+  }
+  &__title {
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    span {
+      color: $blue;
+    }
+  }
+  &__text {
+    max-width: 680px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__item {
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  max-width: 360px;
+  width: 100%;
+  min-height: 295px;
+  padding: 50px 60px;
+  a{
+    color: $c5; 
+  }
+  }
+  &__item-logo {
+    font-size: 48px;
+    color: $blue;
+    margin-bottom: 40px;
+  }
+  &__item-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  &__item-contact {
+  }
+}
+.help__message {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  min-height: 592px;
+  
+  &-title{
+    padding: 50px 0 25px;
+    min-height: 110px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 1px solid #eff1f5;
+    
+  }
+  &-button {
+    justify-self: center;
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px 190px 60px 190px;
+  }
+  textarea{
+    border: 1px solid #eff1f5;
+    width: 100%;
+    padding: 20px 50px;
+    resize: none;
+    min-height: 130px;
+    margin-bottom: 30px;
+  }
+  &-input{
+    border: 1px solid #eff1f5;
+    max-width: 361px;
+    width: 100%;
+    min-height: 53px;
+    margin-bottom: 30px;
+    padding: 20px 50px;
+    &:nth-child(2n), &:nth-child(4n){
+      padding-left: 20px;
+    }
+  }
+  .help__message-button {
+    margin: 0 auto;
+    width: 170px;
+    padding: 20px 35px;
+  }
+}
+.map__inner{
+  padding: 100px 0;
+}
+/* ----------------------------- end contact us ----------------------------- */
+/* -------------------------------------------------------------------------- */

@@ -122,20 +122,119 @@
           </div>
         </div>
       </header>
-      <section class="breadcrumbs">
+      <section class="contact">
         <div class="container">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><span>404</span></li>
-          </ul>
-          <div class="breadcrumbs__name">Error-404</div>
+          
+          <div class="contact__title">Contact Us</div>
+          <div class="contact__text">You came to the right place</div>
         </div>
       </section>
-      <section class="not-find">
+      <section class="help">
         <div class="container">
-          <div class="not-find__inner">
-            <div class="not-find__text">Oops! Page Not Found</div>
-            <a href="index.html" class="not-find__button button__blue">Back to Home</a>
+          <div class="help__inner">
+            <div class="help__name">
+              <div class="help__title">
+                Why Choose <span>MartPlace</span>
+              </div>
+              <div class="help__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</div>
+            </div>
+            <div class="help__items">
+              <div class="help__item">
+                <div class="help__item-logo lnr-map-marker"></div>
+                <div class="help__item-title">Office Address</div>
+                <div class="help__item-contact">
+                  202 New Hampshire Avenue
+                Northwest #100, New York-2573
+                </div>
+              </div>
+              <div class="help__item">
+                <div class="help__item-logo lnr-phone"></div>
+                <div class="help__item-title">Phone Number</div>
+                <ul class="help__item-contact">
+                  <li><a href="tel:+18006434500">1-800-643-4500</a></li>
+                  <li><a href="tel:+18006434500">1-800-643-4500</a></li>
+                </ul>
+              </div>
+              <div class="help__item">
+                <div class="help__item-logo lnr-inbox"></div>
+                <div class="help__item-title">100% Secure Payment</div>
+                <ul class="help__item-contact">
+                  <li><a href="mailto:support@aazztech.com">support@aazztech.com</a></li>
+                  <li><a href="mailto:support@aazztech.com">support@aazztech.com</a></li>
+                </ul>
+              <!-- </div> -->
+              </div>
+            </div>
+            <div class="help__message">
+              <div class="help__message-title">
+                Leave Your Messages
+              </div>
+              <form
+                action="index.php"
+                method="post"
+              >
+                <input class="help__message-input"
+                  type="text"
+                  name="fnm"
+                  value=""
+                  placeholder="Name"
+                >
+                <input class="help__message-input"
+                  type="text"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                >
+                <input class="help__message-input"
+                  type="text"
+                  name="subject"
+                  value=""
+                  placeholder="Subject"
+                >
+                <input class="help__message-input"
+                  type="text"
+                  name="phone"
+                  value=""
+                  placeholder="Phone"
+                >
+                <textarea
+                  name="text"
+                  placeholder="Your text here..."
+                ></textarea>
+                <!-- <input
+                  type="text"
+                  name="summa"
+                  id=’summa’
+                  value=""
+                ><br> -->
+                <input
+                  type="hidden"
+                  name="hidden"
+                  value="ok"
+                >
+                <input class="help__message-button button__blue"
+                  type="submit"
+                  value="Send Request"
+                  name="Submit"
+                  onclick="return
+                  Formdata(this.form)"
+                >
+              </form>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div class="map__inner" id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.461459398045!2d28.03436094077529!3d53.888001544964496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46da36ea936f47cd%3A0x67b0bd70f1532c48!2sCustoms%20Minsk-2!5e0!3m2!1sen!2sby!4v1642257993748!5m2!1sen!2sby"
+              width="100%"
+              height="600"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -168,7 +267,7 @@
                 >support@aazztech.com</a>
                 <a
                   class="footer__address lnr-map-marker"
-                  href="contact.html#map"
+                  href="#map"
                 >202 New Hampshire Avenue
                   Northwest #100, New York-2573</a>
               </address>
